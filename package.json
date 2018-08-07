@@ -1,0 +1,26 @@
+{
+  "name": "metaperformance-mdx",
+  "version": "1.0.0",
+  "description": "A talk about performance",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "mdx-deck deck.mdx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkoltai/presentation-metaperformance.git"
+  },
+  "author": "bkoltai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bkoltai/presentation-metaperformance/issues"
+  },
+  "homepage": "https://github.com/bkoltai/presentation-metaperformance#readme",
+  "dependencies": {
+    "mdx-deck": "^1.5.10",
+    "moment": "^2.22.2",
+    "styled-components": "^3.4.1"
+  }
+}

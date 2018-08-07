@@ -1,0 +1,104 @@
+import { Appear } from "mdx-deck"
+import TimeCalculator from "./TimeCalculator"
+import * as store from "./store"
+import BigInput from "./BigInput"
+
+# Performance 🏎💨 
+
+## (Meta)
+
+#### Benji Koltai 
+##### Co-Founder @ [Galley Solutions](www.galleysolutions.co)
+
+---
+
+# Performance Optimization 📆
+
+<Appear>
+    <h2>Identify ⚠️</h2>
+    <h2>Quantify 📈</h2>
+    <h2>Fix 🔧</h2>
+    <h2>Verify 📉</h2>
+</Appear>
+
+---
+
+# Problem ⚠️
+
+## Moar Laziness 🤤 👨‍💻 👩‍💻 
+
+---
+
+# Problem ⚠️
+
+<Appear>
+    <h2>Moving off home ⌨️</h2>
+    <h2>Keystroke Golf ⛳</h2>
+</Appear>
+
+---
+
+# Quantify 📈
+
+<TimeCalculator onSave={totalTime => store.set("slow", totalTime)} />
+
+---
+
+# Fix 🔧
+
+##  Be Lazy (Efficient)! 🤤
+## Cmd + Tab
+## Cmd + Shift + [
+
+---
+
+# Verify 📉
+
+<TimeCalculator onSave={totalTime => store.set("fast", totalTime)} otherTotalTime={store.get("slow")} />
+
+---
+
+# Problem ⚠️
+
+## Emojis 😃
+
+---
+
+# Quantify 📈
+
+<BigInput/>
+
+<TimeCalculator onSave={totalTime => store.set("slow", totalTime)} />
+
+---
+
+# Fix 🔧
+
+##  Be Lazy (Efficient)! 🤤
+## [Google search](https://www.google.com/search?ei=E_tpW4G2GamX0gKCqL6IDA&q=mac+emoji+app&oq=mac+emoji+app&gs_l=psy-ab.3..0j0i22i30k1l5.1340.7022.0.7228.13.13.0.0.0.0.440.2147.0j4j3j1j1.9.0....0...1.1.64.psy-ab..4.9.2145...0i67k1j0i131k1.0.pkokq9nzG8c)
+## [Rocket 🚀](https://matthewpalmer.net/rocket/)
+
+---
+
+# Verify 📉
+
+<BigInput/>
+
+<TimeCalculator onSave={totalTime => store.set("fast", totalTime)} otherTotalTime={store.get("slow")} />
+
+---
+
+# Take-aways
+
+<Appear>
+    <h3>Attack small but frequent inefficient tasks</h3>
+    <h3>Take upfront time to optimize for long term gain</h3>
+    <h3>Learn shortcuts and how to discover them</h3>
+</Appear>
+
+---
+
+# Credits
+
+#### [mdx-deck](https://github.com/jxnblk/mdx-deck) via [Kent C. Dodds News](https://buttondown.email/kentcdodds)
+#### [Michael Chan](http://chantastic.io/) (last month's? talk)
