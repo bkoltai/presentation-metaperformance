@@ -1,9 +1,9 @@
 import moment from "moment"
 import React from "react"
-import styled from "styled-components"
 
 const round = (number, precision) =>
   Math.round(number * (100 * precision)) / (100 * precision)
+
 class Results extends React.Component {
   state = {}
 

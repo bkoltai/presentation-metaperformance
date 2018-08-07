@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import Stopwatch from "./Stopwatch"
-import Results from "./Results"
 import moment from "moment"
+import React, { Component } from "react"
+import Results from "./Results"
+import Stopwatch from "./Stopwatch"
 
 class TimeCalculator extends Component {
   state = { numTimesPerHour: 2 }

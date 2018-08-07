@@ -1,17 +1,12 @@
 import moment from "moment"
 import React, { Component } from "react"
-import BigButton from "./BigButton"
 import styled from "styled-components"
+import BigButton from "./BigButton"
 
 const StopwatchStyled = styled.div`
   display: flex;
-  flex-direction: column;
-
-  .controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  justify-content: space-between;
+  align-items: center;
 
   label {
     margin-right: 8px;
@@ -58,25 +53,23 @@ class Stopwatch extends Component {
     } = this.props
     return (
       <StopwatchStyled>
-        <div className="controls">
-          {!startTime ? (
-            <BigButton onClick={onStart}>start</BigButton>
-          ) : !stopTime ? (
-            <BigButton onClick={onStop}>stop</BigButton>
-          ) : (
-            <React.Fragment>
-              <BigButton onClick={onReset}>reset</BigButton>
-            </React.Fragment>
-          )}
-          <div>
-            <label>Events per hr</label>
-            <input
-              onKeyUp={this.handleKeyUp}
-              type="number"
-              value={numTimesPerHour}
-              onChange={e => onChange({ numTimesPerHour: e.target.value })}
-            />
-          </div>
+        {!startTime ? (
+          <BigButton onClick={onStart}>start</BigButton>
+        ) : !stopTime ? (
+          <BigButton onClick={onStop}>stop</BigButton>
+        ) : (
+          <React.Fragment>
+            <BigButton onClick={onReset}>reset</BigButton>
+          </React.Fragment>
+        )}
+        <div>
+          <label>Events per hr</label>
+          <input
+            onKeyUp={this.handleKeyUp}
+            type="number"
+            value={numTimesPerHour}
+            onChange={e => onChange({ numTimesPerHour: e.target.value })}
+          />
         </div>
       </StopwatchStyled>
     )
