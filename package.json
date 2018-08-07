@@ -4,8 +4,7 @@
   "description": "A talk about performance",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
+    "build": "mdx-deck build deck.mdx",
     "start": "mdx-deck deck.mdx"
   },
   "repository": {
