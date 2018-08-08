@@ -4,7 +4,7 @@ import Results from "./Results"
 import Stopwatch from "./Stopwatch"
 
 class TimeCalculator extends Component {
-  state = { numTimesPerHour: 2 }
+  state = { numTimesPerHour: 6 }
 
   handleStart = () => this.setState({ startTime: moment() })
   handleStop = () => {
